@@ -8,4 +8,6 @@
   --radius: 7px;
   --text_size: clamp(0.7rem, 1vw, 0.9rem);
   --btn_bg: #dbf7e6;
+  --btn_shadow: #72a95694;
+  --btn_shadow_hover: #04cf04;
 }
