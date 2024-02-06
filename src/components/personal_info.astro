@@ -7,6 +7,7 @@ import IconPhone from '../icons/phone.astro';
 import IconLocation from '../icons/location.astro';
 import IconWhatsapp from '../icons/whatsapp.astro';
 import IconMessenger from '../icons/messenger.astro';
+import Download from '../icons/download.astro';
 
 const {
   basics: {
@@ -66,13 +67,15 @@ const {
         <IconWhatsapp />
       </a>
     </li>
-    <!-- <li>
+    <li>
       <a
-        href='https://m.me/tu_nombre_de_usuario_de_messenger?message=Hola,%20estoy%20interesado%20en%20tu%20producto'
+        class='download'
+        href='/images/myw3schoolsimage.jpg'
+        download
       >
-        <IconMessenger />
+        <Download />
       </a>
-    </li> -->
+    </li>
   </ul>
 </section>
 
@@ -133,8 +136,18 @@ const {
     justify-content: center;
   }
 
+  .social :is(li, a) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+  }
+
   a {
     display: block;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     background-color: var(----btn_bg);
     padding: 0.5vw;
