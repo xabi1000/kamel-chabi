@@ -1,0 +1,58 @@
+---
+interface Props {
+  title: string;
+}
+import '../css/index.css';
+import '@fontsource-variable/roboto-mono';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href='/favicon.svg'
+    />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- OPEN_GRAPH -->
+    <meta
+      property='og:title'
+      content='Kamel CHABI: Conducteur expérimenté: sécurité et efficacité'
+    />
+    <meta
+      property='og:description'
+      content="Découvrez Kamel CHABI, un conducteur avec plus de 7 ans d'expérience, engagé envers la sécurité et l'excellence."
+    />
+    <meta property='og:image' content='/profile.webp' />
+    <meta
+      property='og:url'
+      content='https://www.ejemplo.com/petter-karlson'
+    />
+    <meta property='og:type' content='profile' />
+    <meta property='og:site_name' content='Kamel CHABI' />
+    <meta property='og:locale' content='fr_FR' />
+
+    <!-- Twitter Card tags for Twitter -->
+    <meta name='twitter:card' content='summary' />
+    <meta
+      name='twitter:title'
+      content='Kamel CHABI: Conducteur expérimenté: sécurité et efficacité'
+    />
+    <meta
+      name='twitter:description'
+      content="Découvrez Kamel CHABI, un conducteur avec plus de 7 ans d'expérience, engagé envers la sécurité et l'excellence."
+    />
+    <meta name='twitter:image' content='/profile.webp' />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

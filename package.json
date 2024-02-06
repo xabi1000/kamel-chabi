@@ -1,0 +1,17 @@
+{
+  "name": "kamel_chabi",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto-mono": "5.0.17",
+    "astro": "4.3.2",
+    "astro-icon": "^1.1.0"
+  }
+}

@@ -1,0 +1,35 @@
+---
+const { hobbies } = Astro.props;
+---
+
+<h3>Hobbies</h3>
+<ul>
+  {
+    hobbies.map(({ name }) => (
+      <li>
+        <span>{name}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  :is(ul, li) {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: var(--separation);
+    padding: var(--separation_small);
+  }
+  li {
+    flex-direction: column;
+    background-color: var(--btn_bg);
+    padding: var(--separation_small);
+    border-radius: var(--radius);
+  }
+</style>

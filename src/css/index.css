@@ -1,0 +1,36 @@
+@import './normalize.css';
+@import './variables.css';
+
+body {
+  background-color: var(--bgc);
+  color: var(--text);
+  font-size: var(--text_size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title);
+}
+
+article,
+.container {
+  background-color: var(--bgc_cards);
+  border-radius: var(--radius);
+  padding: var(--separation);
+}
+
+article,
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--separation_small);
+}
+
+svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}

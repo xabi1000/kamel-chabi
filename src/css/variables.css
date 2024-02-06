@@ -1,0 +1,11 @@
+:root {
+  --bgc: #d7e1dc36;
+  --title: #000;
+  --text: #6c5b5b;
+  --separation: 3vh;
+  --separation_small: 1.5vh;
+  --bgc_cards: #f9efdf;
+  --radius: 7px;
+  --text_size: clamp(0.7rem, 1vw, 0.9rem);
+  --btn_bg: #dbf7e6;
+}

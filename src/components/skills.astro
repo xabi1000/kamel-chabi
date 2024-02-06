@@ -1,0 +1,24 @@
+---
+const { skills } = Astro.props;
+---
+
+<h3>Compétences</h3>
+<ul>
+  {skills.map(({ name }) => <li>{name}</li>)}
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: var(--separation_small);
+    padding: var(--separation_small);
+  }
+  li {
+    background-color: var(--btn_bg);
+    padding: var(--separation_small);
+    /* box-shadow: 0 0 5px 1px #72a95694; */
+    border-radius: var(--radius);
+  }
+</style>

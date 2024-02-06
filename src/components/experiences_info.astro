@@ -1,0 +1,52 @@
+---
+import About from './about.astro';
+import WorkExperience from './work_experience.astro';
+import IconWork from '../icons/work.astro';
+import data from '../data/cv.json';
+const { work: Work } = data;
+---
+
+<section class='experiences'>
+  <About />
+  <div class='container'>
+    <IconWork />
+    <h2>Experience</h2>
+  </div>
+
+  {
+    Work.map((work) => (
+      <WorkExperience
+        name={work.name}
+        position={work.position}
+        startDate={work.startDate}
+        endDate={work.endDate}
+        summary={work.summary}
+      />
+    ))
+  }
+</section>
+
+<style>
+  .experiences {
+    padding: var(--separation_small) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--separation);
+
+    @media (width > 768px) {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--separation);
+
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+</style>

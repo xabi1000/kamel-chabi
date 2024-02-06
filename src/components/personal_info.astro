@@ -1,0 +1,144 @@
+---
+import data from '../data/cv.json';
+
+import IconWeb from '../icons/web.astro';
+import IconMail from '../icons/mail.astro';
+import IconPhone from '../icons/phone.astro';
+import IconLocation from '../icons/location.astro';
+import IconWhatsapp from '../icons/whatsapp.astro';
+import IconMessenger from '../icons/messenger.astro';
+
+const {
+  basics: {
+    name,
+    label,
+    image,
+    url,
+    email,
+    phone,
+    location,
+  },
+  skills,
+  languages,
+  hobbies,
+} = data;
+---
+
+<section class='personal_info'>
+  <header>
+    <img
+      src={image}
+      alt='profile image'
+      title='Mr. Kemel'
+    />
+    <h1>{name}</h1>
+    <h3>B - C - E+C</h3>
+    <h2>{label}</h2>
+  </header>
+  <address class='contact'>
+    <p title='My Site Web'>
+      <IconWeb />
+      <a href={url}><strong>{url}</strong></a>
+    </p>
+    <p title='My E-mail'>
+      <IconMail width={'1.3rem'} height={'1.3rem'} />
+      <a href=`mailto:${email}`><strong>{email}</strong></a>
+    </p>
+    <p title='My Phone Number'>
+      <IconPhone />
+      <a href=`tel:${phone}`><strong>{phone}</strong></a>
+    </p>
+    <p title='My Adress Location'>
+      <IconLocation />
+      <a
+        href={location.googleMaps}
+        target='_blank'
+        rel='noopener noreferrer'
+        ><strong>{location.address}</strong></a
+      >
+    </p>
+  </address>
+  <ul class='social'>
+    <li>
+      <a
+        href={`https://api.whatsapp.com/send?phone=${phone}&text=Hola,%20J'envoievous%20adresse%20ce%20message%20via%20le%20lien%20WhatsApp%20qui%20figure%20dans%20votre%20portefeuille.`}
+      >
+        <IconWhatsapp />
+      </a>
+    </li>
+    <!-- <li>
+      <a
+        href='https://m.me/tu_nombre_de_usuario_de_messenger?message=Hola,%20estoy%20interesado%20en%20tu%20producto'
+      >
+        <IconMessenger />
+      </a>
+    </li> -->
+  </ul>
+</section>
+
+<style>
+  .personal_info {
+    @media (width > 768px) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  :is(.personal_info, header, .contact, .social) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--separation_small);
+    padding: var(--separation_small);
+    width: 100%;
+  }
+
+  :is(header, .contact, .social) {
+    background-color: var(--bgc_cards);
+    border-radius: var(--radius);
+  }
+
+  header {
+    img {
+      border-radius: var(--radius);
+      object-fit: cover;
+      width: 70%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: var(--text_size);
+      text-wrap: balance;
+      text-align: center;
+      color: var(--text);
+    }
+  }
+  .contact {
+    align-items: flex-start;
+  }
+
+  .social {
+    gap: var(--separation);
+  }
+
+  p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--separation_small);
+  }
+
+  .social,
+  .social a {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  a {
+    display: block;
+    cursor: pointer;
+    background-color: var(----btn_bg);
+    padding: 0.5vw;
+    box-shadow: 0 0 5px 1px #72a95694;
+    border-radius: var(--radius);
+  }
+</style>

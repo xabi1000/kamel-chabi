@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ExperiencesInfo from '../components/experiences_info.astro';
+import PersonalInfo from '../components/personal_info.astro';
+import Divers from '../components/divers.astro';
+---
+
+<Layout
+  title='Kamel CHABI: Conducteur expérimenté: sécurité et efficacité'
+>
+  <main>
+    <PersonalInfo />
+    <Divers />
+    <ExperiencesInfo />
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    max-width: 1301px;
+    min-height: 100%;
+    margin-inline: auto;
+    padding: 1rem;
+    gap: var(--separation);
+
+    @media (width > 768px) {
+      grid-template-columns: 31% 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,292 @@
+{
+  "basics": {
+    "name": "Kamel CHABI",
+    "label": "Conducteur responsable, efficace et multilingue avec un fort engagement envers la sécurité et l'excellence.",
+    "image": "/profile.webp",
+    "email": "konor172@gmail.com",
+    "phone": "+33 7 80 87 76 96",
+    "url": "https://kamel-chabi.dev",
+    "summary": "Conducteur expérimenté de poids lourds avec plus de 7 ans d'expérience sur des trajets locaux, interrégionaux et transfrontaliers. Je suis méticuleux dans la planification de mes itinéraires, je parle couramment l'espagnol et le français, et j'améliore constamment mon anglais. Je m'engage à me tenir au courant des réglementations et des bonnes pratiques du secteur. Je souhaite apporter mes compétences et mes connaissances à votre équipe tout en continuant à grandir professionnellement au sein de votre organisation.",
+    "location": {
+      "address": "2832 route d'avignon, chateaurenard",
+      "googleMaps": "https://www.google.com/maps/place/Rte+d'Avignon,+Ch%C3%A2teaurenard,+Francia/@43.8860782,4.7105765,11.05z/data=!4m6!3m5!1s0x12b5eeb8aefca48d:0x7db7106cd9556315!8m2!3d43.895244!4d4.8227719!16s%2Fg%2F1tcyp0d5?entry=ttu",
+      "postalCode": "13160",
+      "city": "Avignon",
+      "countryCode": "FR",
+      "region": "Francia"
+    },
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      },
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "GNT Transport Bretagne",
+      "position": "Chauffeur SPL National",
+      "startDate": "2022-07-01",
+      "endDate": null,
+      "summary": [
+        "Conduite d'un camion semi-remorque, effectuant des relais en régional ou en direct en national.",
+        "Chargement et déchargement des produits tels que alcools et vins \"Maison Johannes Boubee\" sur l'ensemble du territoire Français, avec une semi bâchée, fourgon ou semi-frigorifique.",
+        "Contrôle de la température dans la semi-frigorifique.",
+        "Conduite responsable, nettoyage du camion et de la semi-remorque."
+      ],
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "TRSO France",
+      "position": "Chauffeur Routier SPL National",
+      "startDate": "2020-08-01",
+      "endDate": "2022-07-01",
+      "summary": [
+        "Conduite d'un tracteur avec semi-remorque transportant des produits alimentaires (fruits, légumes) du sud au nord de la France, ainsi que des produits de construction, messagerie express, ou des produits dangereux selon les besoins des clients.",
+        "Conduite responsable, chargement et déchargement des palettes, nettoyage intérieur et extérieur du tracteur et de la semi-remorque."
+      ],
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Z - TRANS France",
+      "position": "Chauffeur Routier SPL National",
+      "startDate": "2019-11-01",
+      "endDate": "2020-08-01",
+      "summary": [
+        "Conduite d'un camion semi-remorque pour le service alimentaire.",
+        "Chargement et déchargement de marchandises.",
+        "Conduite responsable en respectant le code de la route.",
+        "Contrôle de l'état du camion et de la remorque, organisation du temps de travail, respect des périodes de repos obligatoires.",
+        "Remplissage de la lettre de voiture (CMR)."
+      ],
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Agetrans",
+      "position": "Chauffeur Routier SPL International",
+      "startDate": "2015-03-01",
+      "endDate": "2019-09-01",
+      "summary": [
+        "Conduite d'un camion semi-remorque pour le service alimentaire.",
+        "Chargement et déchargement de marchandises.",
+        "Conduite responsable en respectant le code de la route.",
+        "Contrôle de l'état du camion et de la remorque, organisation du temps de travail, respect des périodes de repos obligatoires.",
+        "Remplissage de la lettre de voiture (CMR)."
+      ],
+      "highlights": ["Started the company"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "url": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "B - C - E+C"
+    },
+    {
+      "name": "ADR + CITERNE"
+    },
+    {
+      "name": "Marchandise dangereuse et pétrolier"
+    },
+    {
+      "name": "Citerne"
+    },
+    {
+      "name": "RSE RSA"
+    },
+    {
+      "name": "Cronotachygraphe"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Espagnol",
+      "fluency": "C2"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "B1"
+    },
+    {
+      "language": "francais",
+      "fluency": "C1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "mars.codes",
+      "isActive": true,
+      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "highlights": [
+        "Elige tu propia aventura",
+        "En desarrollo"
+      ],
+      "url": "https://mars.codes"
+    },
+    {
+      "name": "AdventJS",
+      "isActive": true,
+      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "highlights": [
+        "+1 millón de visitas",
+        "Multidioma",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://advent.js/dev"
+    },
+    {
+      "name": "Codember",
+      "isActive": true,
+      "description": "Juego interactivo de programación con retos y secretos",
+      "highlights": [
+        "+2000 usuarios activos",
+        "Retos para cualquier lenguaje"
+      ],
+      "url": "https://codember.dev"
+    },
+    {
+      "name": "codi.link",
+      "isActive": true,
+      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "highlights": [
+        "100k visitas al mes",
+        "Desarrollado por la comunidad"
+      ],
+      "url": "https://codi.link",
+      "github": "https://github.com/midudev/codi.link"
+    },
+    {
+      "name": "Pruebas Técnicas",
+      "isActive": true,
+      "description": "Lista de pruebas técnicas de empresas para practicar programación",
+      "highlights": [
+        "100% gratuito",
+        "+500 soluciones de la comunidad"
+      ],
+      "url": "https://pruebastecnicas.com",
+      "github": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "name": "miduConf",
+      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+      "highlights": [
+        "+15k tickets repartidos",
+        "+50k espectadores en directo"
+      ],
+      "url": "https://miduconf.com"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Sports",
+      "keywords": [
+        "pêche",
+        "chasse",
+        "randonnée",
+        "cyclisme",
+        "sports"
+      ]
+    },
+    {
+      "name": "Cinema",
+      "keywords": [
+        "jeux de société",
+        "jeux vidéo",
+        "cartes",
+        "divertissement",
+        "stratégie"
+      ]
+    },
+    {
+      "name": "Collection",
+      "keywords": [
+        "timbres",
+        "monnaies",
+        "miniatures",
+        "souvenirs",
+        "collection"
+      ]
+    },
+    {
+      "name": "Bricolage",
+      "keywords": [
+        "réparations",
+        "améliorations",
+        "maison",
+        "outils",
+        "bricolage"
+      ]
+    },
+    {
+      "name": "Bénévolat",
+      "keywords": [
+        "aide",
+        "communauté",
+        "solidarité",
+        "engagement",
+        "altruisme"
+      ]
+    }
+  ]
+}

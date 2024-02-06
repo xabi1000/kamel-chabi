@@ -1,0 +1,115 @@
+---
+import Clock from '../icons/clock.astro';
+
+export interface Props {
+  name: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  summary: string[];
+}
+
+const { name, position, startDate, endDate, summary } =
+  Astro.props;
+
+function transformDateToWords(dateText: string): string {
+  const date = new Date(dateText);
+  if (isNaN(date.getTime())) return 'Invalid date';
+
+  const options = {
+    month: 'short',
+    year: 'numeric',
+  } as Intl.DateTimeFormatOptions;
+
+  const formattedDate = new Intl.DateTimeFormat(
+    'fr-FR',
+    options
+  );
+
+  const [month, year] = formattedDate
+    .format(date)
+    .split(' ');
+  // transform first leter to uppercase
+  const formattedMonth =
+    month.charAt(0).toUpperCase() + month.slice(1);
+
+  return `${formattedMonth} ${year}`;
+}
+---
+
+<article>
+  <header>
+    <h3>{name}</h3>
+    <div class='separator'>
+      <p>{position}</p>
+      <div class='date'>
+        {endDate ? <Clock /> : <div class='green_circle' />}
+        <p>
+          <time datetime={startDate}
+            ><b>{transformDateToWords(startDate)}</b></time
+          > - <time datetime={endDate}
+            ><b
+              >{
+                endDate ? (
+                  transformDateToWords(endDate)
+                ) : (
+                  <i>Present</i>
+                )
+              }</b
+            ></time
+          >
+        </p>
+      </div>
+    </div>
+  </header>
+  {summary.map((sum) => <p>{sum}</p>)}
+</article>
+
+<style>
+  p {
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  header {
+    padding-bottom: var(--separation);
+  }
+  :is(.date, .separator) {
+    display: flex;
+  }
+
+  .date {
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    padding-right: var(--separation);
+    gap: 1vh;
+  }
+
+  .separator {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: var(--separation_small);
+
+    @media (width > 768px) {
+      flex-direction: row;
+
+      .date {
+        width: auto;
+      }
+    }
+  }
+
+  .green_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: var(--separation);
+  }
+
+  i {
+    color: green;
+  }
+</style>

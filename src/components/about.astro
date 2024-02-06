@@ -1,0 +1,28 @@
+---
+import data from '../data/cv.json';
+import AboutIcon from '../icons/about_icon.astro';
+
+const {
+  basics: { summary },
+} = data;
+---
+
+<article>
+  <header>
+    <AboutIcon />
+    <h3>À propos</h3>
+  </header>
+  <p>{summary}</p>
+</article>
+
+<style>
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--separation);
+  }
+  p {
+    text-wrap: balance;
+  }
+</style>

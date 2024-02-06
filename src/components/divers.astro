@@ -1,0 +1,30 @@
+---
+import data from '../data/cv.json';
+
+const { skills, languages, hobbies } = data;
+
+import Skills from './skills.astro';
+import Languages from './languages.astro';
+import Hobbies from './hobbies.astro';
+---
+
+<section class='grid_reorder'>
+  <Skills skills={skills} />
+  <Languages languages={languages} />
+  <Hobbies hobbies={hobbies} />
+</section>
+
+<style>
+  .grid_reorder {
+    display: grid;
+    gap: var(--separation);
+    padding: var(--separation);
+    text-align: center;
+    grid-row: 3 / 4;
+
+    @media (width > 768px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+</style>

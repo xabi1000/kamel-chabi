@@ -1,0 +1,36 @@
+---
+const { languages } = Astro.props;
+---
+
+<h3>Langues</h3>
+<ul>
+  {
+    languages.map(({ language, fluency }) => (
+      <li>
+        <span>{language}</span> <span>{fluency}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  :is(ul, li) {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: var(--separation);
+    padding: var(--separation_small);
+  }
+  li {
+    flex-direction: column;
+    background-color: var(--btn_bg);
+    padding: var(--separation_small);
+    /* box-shadow: 0 0 5px 1px #72a95694; */
+    border-radius: var(--radius);
+  }
+</style>
